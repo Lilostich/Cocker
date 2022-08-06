@@ -1,8 +1,14 @@
+# Cocker.
+
+## Введение
+
 Cocker - container management system, same as Docker / Podman, written for study purposes.
 Name comes from first letter of implementation language C++ and other part from name of the parallel technology - Docker.
 Hope that this name is acceptable...
 
 МЫ хотим глубоко разобраться в принциах работы систем управления контейнерами, чтобы, как минимум, уметь грамотно ими пользоваться, решать нетривиальные задачи в этой области, и как максимум, иметь опыт в реализации таких систем, если это когда-нибудь понадобится.
+
+## Аналоги
 
 Примеры существующих систем:
 
@@ -14,13 +20,17 @@ Hope that this name is acceptable...
 
 * [ContainerD](https://containerd.io/)
 
+
+
+## План:
+
 Лучший стособ глубоко разобраться - написать такую систему самому.
 
 Рабочий репозиторий - [здесь](https://github.com/AlexandrBirman/Cocker).
 
-Черновой план действий:
+Черновой план действий следующий:
 
-1) Легкое введение [тут](https://dorny.github.io/docker-deep-dive/#/);
+1) Ознкаомиться с легким введением [тут](https://dorny.github.io/docker-deep-dive/#/);
 
 2) Реализовать все то, что написано [здесь](https://cesarvr.github.io/post/2018-05-22-create-containers/) на C++;
    
@@ -35,3 +45,20 @@ Hope that this name is acceptable...
 5) Подключить ралзичные оптимизации типа [OverlayFS](https://docs.docker.com/storage/storagedriver/overlayfs-driver/);
 
 6) Проработать общий дизайн и интерфейс системы и реализовать его.
+
+## Сборка
+
+Для сборки используется *CMake* (не ниже **3.20**).
+
+```bash
+> cmake CMakeLists.txt
+> cmake --build . --clean-first
+```
+
+## Запуск
+
+Запускать необходимо с root правами:
+
+```bash
+> sudo ./Cocker
+```
