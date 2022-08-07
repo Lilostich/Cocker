@@ -1,8 +1,8 @@
-# Cocker.
+# Maniso.
 
 ## Введение
 
-Cocker - container management system, same as Docker / Podman, written for study purposes.
+Maniso - container management system, same as Docker / Podman, written for study purposes.
 Name comes from first letter of implementation language C++ and other part from name of the parallel technology - Docker.
 Hope that this name is acceptable...
 
@@ -20,13 +20,11 @@ Hope that this name is acceptable...
 
 * [ContainerD](https://containerd.io/)
 
-
-
 ## План:
 
 Лучший стособ глубоко разобраться - написать такую систему самому.
 
-Рабочий репозиторий - [здесь](https://github.com/AlexandrBirman/Cocker).
+Рабочий репозиторий - [здесь](https://github.com/AlexandrBirman/Maniso).
 
 Черновой план действий следующий:
 
@@ -48,7 +46,7 @@ Hope that this name is acceptable...
 
 ## Сборка
 
-Для сборки используется *CMake* (не ниже **3.20**).
+Сборка производится на linux. Для сборки используется *CMake* (не ниже **3.20**).
 
 ```bash
 > cmake CMakeLists.txt
@@ -60,5 +58,5 @@ Hope that this name is acceptable...
 Запускать необходимо с root правами:
 
 ```bash
-> sudo ./Cocker
+> sudo ./Maniso
 ```
